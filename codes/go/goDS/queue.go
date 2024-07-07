@@ -1,9 +1,4 @@
-package test
-
-import (
-	"fmt"
-	"testing"
-)
+package goDS
 
 type Queue[T any] struct {
 	len      int
@@ -53,16 +48,4 @@ func (q *Queue[T]) Dequeue() (T, bool) {
 
 func (q *Queue[T]) Len() int {
 	return q.len
-}
-
-func TestQueue(t *testing.T) {
-	q := NewQueue[int](10)
-
-	for i := 0; i < 20; i++ {
-		q.Enqueue(i)
-	}
-
-	for i := 0; i < 20; i++ {
-		fmt.Println(q.Dequeue())
-	}
 }

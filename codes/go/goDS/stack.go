@@ -1,9 +1,4 @@
-package test
-
-import (
-	"fmt"
-	"testing"
-)
+package goDS
 
 type Stack[T any] struct {
 	len      int
@@ -35,15 +30,4 @@ func (s *Stack[T]) Pop() (T, bool) {
 	}
 	s.len--
 	return s.data[s.len], true
-}
-
-func TestStack(t *testing.T) {
-	s := NewStack[int](10)
-
-	for i := 0; i < 20; i++ {
-		s.Push(i)
-	}
-	for i := 0; i < 10; i++ {
-		fmt.Println(s.Pop())
-	}
 }

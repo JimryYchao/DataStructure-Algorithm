@@ -1,3 +1,13 @@
 /TODO
 
-_REF_
+_REF_/
+
+[Oo]bj/
+[Dd]ebug/
+
+scripts/
+
+.vscode/
+.vs/
+
+*.exe

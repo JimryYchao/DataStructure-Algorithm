@@ -1,4 +1,4 @@
-package test
+package exams_test
 
 func Horner(arr []int, n, x int) int {
 	p := 0

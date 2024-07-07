@@ -1,6 +1,7 @@
-package test
+package goA_test
 
 import (
+	. "goDSA/goA"
 	"math/rand"
 	"testing"
 	"time"
