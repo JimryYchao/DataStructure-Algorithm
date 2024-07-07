@@ -37,7 +37,6 @@ void mergeSort(int *A, size_t l, size_t r)
 
 int main()
 {
-    printf("Hello\n");
     int a[9] = {9, 5, 3, 4, 8, 7, 6, 1, 2};
     mergeSort(a, 0, 8);
     for (size_t i = 0; i < 9; i++)

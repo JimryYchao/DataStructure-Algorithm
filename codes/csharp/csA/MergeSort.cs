@@ -2,7 +2,7 @@ namespace csA
 {
     public class MergeSort
     {
-        private static void merge(int* A, int l, int m, int r)
+        private static void merge(int[] A, int l, int m, int r)
         {
             int[] tmp = new int[r - l + 1];
             // copy A[l:r] into tmp; and L = A[l:m], R = A[m+1:r]
@@ -25,7 +25,7 @@ namespace csA
                 A[k++] = tmp[iR++];
         }
 
-        public static void Sort(int* A, int p, int r)
+        public static void Sort(int[] A, int p, int r)
         {
             if (p >= r)
                 return;
